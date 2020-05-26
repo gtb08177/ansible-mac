@@ -1,0 +1,35 @@
+---
+# env_vars:
+#   - name: MY_VARIABLE
+#     value: foobar
+homebrew_installed_packages:
+  - zsh
+  - sqlite
+  - gnupg
+  - git
+  - curl
+  - openssl
+  - python
+  - node
+  - terraform
+homebrew_cask_apps:
+  - google-chrome
+  - iterm2
+  - cyberduck
+  - postman
+  - docker
+  - skype
+  - spotify
+  - visual-studio-code
+  - spectacle
+  - vagrant
+  - 1password
+  - etcher
+  - vlc
+  - caffeine
+  # - cocoapods
+  # - sourcetree
+  # - tunnelblick
+  # - android-studio
+  # - charles
+  # - virtualbox

@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  connection: local
+  vars_files:
+    - config.yml
+  tasks:
+    - name: Configure environment variables
+      template:
+        src: "templates/setenv.plist.j2"
+        dest: "~/Library/LaunchAgents/setenv.{{ item.name }}.plist"
+      with_items:
+        - "{{ env_vars }}"
+  roles:
+    - geerlingguy.homebrew
