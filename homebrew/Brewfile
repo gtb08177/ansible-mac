@@ -1,0 +1,24 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+brew "ansible"
+brew "mtr"
+brew "zsh"
+cask "1password", args: { appdir: "/Applications" }
+cask "balenaetcher"
+cask "caffeine", args: { appdir: "/Applications" }
+cask "cyberduck", args: { appdir: "/Applications" }
+cask "docker", args: { appdir: "/Applications" }
+cask "google-chrome", args: { appdir: "/Applications" }
+cask "home-assistant"
+cask "istat-menus"
+cask "iterm2", args: { appdir: "/Applications" }
+cask "mullvadvpn"
+cask "openvpn-connect"
+cask "postman", args: { appdir: "/Applications" }
+cask "skype", args: { appdir: "/Applications" }
+cask "spectacle", args: { appdir: "/Applications" }
+cask "spotify", args: { appdir: "/Applications" }
+cask "vagrant", args: { appdir: "/Applications" }
+cask "visual-studio-code", args: { appdir: "/Applications" }
+cask "vlc", args: { appdir: "/Applications" }
