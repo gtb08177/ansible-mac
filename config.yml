@@ -24,6 +24,7 @@ homebrew_cask_apps:
   - etcher
   - vlc
   - caffeine
+  - whatsapp
   # - cocoapods
   # - sourcetree
   # - tunnelblick
