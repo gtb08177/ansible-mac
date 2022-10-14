@@ -1,0 +1,14 @@
+Host *
+   StrictHostKeyChecking no
+
+Host pi
+   User pi
+   HostName pi.mcnulty.network
+
+Host piz
+   User dietpi
+   HostName piz.mcnulty.network
+
+Host ubuntu
+   User ryan
+   HostName ub.mcnulty.network
