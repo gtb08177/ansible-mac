@@ -12,3 +12,7 @@ Host piz
 Host ubuntu
    User ryan
    HostName ub.mcnulty.network
+
+Host vpn
+   User root
+   HostName vpn.mcnulty.network
