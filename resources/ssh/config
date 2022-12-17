@@ -1,9 +1,17 @@
 Host *
    StrictHostKeyChecking no
 
+Host unifi
+   User root
+   HostKeyAlgorithms +ssh-rsa
+
 Host pi
    User pi
    HostName pi.mcnulty.network
+
+Host box
+   User pi
+   Hostname box.mcnulty.network
 
 Host piz
    User dietpi

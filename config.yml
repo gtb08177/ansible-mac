@@ -1,4 +1,20 @@
 ---
+### Jeff Geerling :: Dotfiles ###
+configure_dotfiles: true
+
+dotfiles_repo: https://github.com/gtb08177/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/Developer/.dotfiles_active
+dotfiles_files:
+  - .zshrc
+  - .gitignore
+  - .gitconfig
+  # - .inputrc
+  # - .osx
+  # - .vimrc
+
+
+### Jeff Geerling :: Homebrew ###
 homebrew_installed_packages:
   - zsh
   - sqlite
@@ -9,6 +25,8 @@ homebrew_installed_packages:
   - python
   - node
   - terraform
+  - httpstat
+  - mtr
 homebrew_cask_apps:
   - google-chrome
   - iterm2
@@ -22,12 +40,11 @@ homebrew_cask_apps:
   - vagrant
   - 1password
   - etcher
+  - istat-menus
   - vlc
   - caffeine
   - whatsapp
-  # - cocoapods
-  # - sourcetree
-  # - tunnelblick
-  # - android-studio
-  # - charles
-  # - virtualbox
+  - topnotch
+  - mullvadvpn
+  - openvpn-connect
+  # - get-iplayer-automator

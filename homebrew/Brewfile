@@ -1,15 +1,13 @@
+# Brewfile to be used as a last resort if Ansible is unable to successfully run
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 brew "ansible"
 brew "httpstat"
 brew "mtr"
-brew "testdisk"
 cask "1password", args: { appdir: "/Applications" }
-cask "audacity"
 cask "balenaetcher"
 cask "caffeine", args: { appdir: "/Applications" }
-cask "cyberduck", args: { appdir: "/Applications" }
 cask "docker", args: { appdir: "/Applications" }
 cask "get-iplayer-automator"
 cask "google-chrome", args: { appdir: "/Applications" }
@@ -28,4 +26,3 @@ cask "vagrant", args: { appdir: "/Applications" }
 cask "visual-studio-code", args: { appdir: "/Applications" }
 cask "vlc", args: { appdir: "/Applications" }
 cask "whatsapp"
-cask "zoom"
