@@ -5,7 +5,6 @@
 # TODO : Once SSH keys are in place, pull down a subset of the Github repos?
 ---
 - hosts: localhost
-  connection: local
   vars_files:
     - config.yml
   tasks:
