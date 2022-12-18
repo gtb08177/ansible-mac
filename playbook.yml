@@ -1,13 +1,22 @@
-# TODO : Ensure a user home Developer directory exists
-# TODO : Enable three finger swipe to go back and forth between pages
-# TODO : Push SSH and ZSH configs into place, either from locally in this repo or pull from another repo publically 
-# TODO : Update the login picture on Mac OS X
 # TODO : Once SSH keys are in place, pull down a subset of the Github repos?
 ---
 - hosts: localhost
   vars_files:
     - config.yml
   tasks:
+    - name: Ensure home/Developer directory exists
+      tags: dev
+      file:
+        path: "/Users/ryan/Developer"
+        state: directory
+
+    - name: Ensure SSH config is in place
+      tags: ['ssh']
+      synchronize:
+        src: "./resources/ssh/config"
+        dest: "~/.ssh/"
+        delete: yes
+
   #   - name: Configure environment variables
   #     template:
   #       src: "templates/setenv.plist.j2"
@@ -18,4 +27,4 @@
     # - role: geerlingguy.homebrew
     - role: geerlingguy.dotfiles
       when: configure_dotfiles
-      tags: ['dotfiles']
+      tags: ['dotfiles','dev']
